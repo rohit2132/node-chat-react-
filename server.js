@@ -10,7 +10,8 @@ const app = express()
 const httpServer = http.createServer(app)
 const io = new Server(httpServer, {
     cors:{
-        origin:'http://localhost:3000',
+        // origin:'http://localhost:3000',
+        origin:'https://socket-io-chat-app-jqec.onrender.com/',
         methods:["GET", "POST", "PUT", "PATCH"]
     }
 })
